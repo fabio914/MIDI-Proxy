@@ -9,7 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var midiSender: MidiSender?
     private var midiInput: MidiInput?
+
     @IBOutlet private weak var label: UILabel!
 
     init() {
@@ -22,6 +24,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        midiSender = MidiSender(address: "192.168.0.94")
         midiInput = MidiInput(delegate: self)
     }
 }
@@ -30,6 +33,7 @@ extension ViewController: MidiInputDelegate {
 
     func midi(_ midiInput: MidiInput, didReceiveEvent event: MidiEvent) {
         label.text = event.debugDescription
+        midiSender?.sendEvent(event)
         print("Received: \(event)")
     }
 }

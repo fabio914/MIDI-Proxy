@@ -154,7 +154,8 @@ struct MidiNote {
     }
 
     var octave: Int {
-        Int((noteNumber / 12) - 1)
+        // This is not giving the right result for the 9th Octave
+        Int((noteNumber / 12)) - 1
     }
 }
 

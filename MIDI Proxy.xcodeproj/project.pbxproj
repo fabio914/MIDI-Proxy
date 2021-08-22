@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		A32A3D1C26D1A5660093FAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32A3D1A26D1A5660093FAC5 /* LaunchScreen.storyboard */; };
 		A32A3D2426D1A57F0093FAC5 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A3D2326D1A57F0093FAC5 /* MIDI.swift */; };
 		A32A3D2626D1B04D0093FAC5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32A3D2526D1B04D0093FAC5 /* ViewController.xib */; };
+		A32A3D2926D1D0F90093FAC5 /* SwiftSocket in Frameworks */ = {isa = PBXBuildFile; productRef = A32A3D2826D1D0F90093FAC5 /* SwiftSocket */; };
+		A32A3D2B26D1D1090093FAC5 /* MIDISender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32A3D2A26D1D1090093FAC5 /* MIDISender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		A32A3D1D26D1A5660093FAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32A3D2326D1A57F0093FAC5 /* MIDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDI.swift; sourceTree = "<group>"; };
 		A32A3D2526D1B04D0093FAC5 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		A32A3D2A26D1D1090093FAC5 /* MIDISender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32A3D2926D1D0F90093FAC5 /* SwiftSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				A32A3D1D26D1A5660093FAC5 /* Info.plist */,
 				A32A3D2326D1A57F0093FAC5 /* MIDI.swift */,
 				A32A3D2526D1B04D0093FAC5 /* ViewController.xib */,
+				A32A3D2A26D1D1090093FAC5 /* MIDISender.swift */,
 			);
 			path = "MIDI Proxy";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "MIDI Proxy";
+			packageProductDependencies = (
+				A32A3D2826D1D0F90093FAC5 /* SwiftSocket */,
+			);
 			productName = "MIDI Proxy";
 			productReference = A32A3D0C26D1A5650093FAC5 /* MIDI Proxy.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = A32A3D0326D1A5640093FAC5;
+			packageReferences = (
+				A32A3D2726D1D0F80093FAC5 /* XCRemoteSwiftPackageReference "SwiftSocket" */,
+			);
 			productRefGroup = A32A3D0D26D1A5650093FAC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 				A32A3D1426D1A5650093FAC5 /* ViewController.swift in Sources */,
 				A32A3D1026D1A5650093FAC5 /* AppDelegate.swift in Sources */,
 				A32A3D2426D1A57F0093FAC5 /* MIDI.swift in Sources */,
+				A32A3D2B26D1D1090093FAC5 /* MIDISender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A32A3D2726D1D0F80093FAC5 /* XCRemoteSwiftPackageReference "SwiftSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fabio914/SwiftSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A32A3D2826D1D0F90093FAC5 /* SwiftSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A32A3D2726D1D0F80093FAC5 /* XCRemoteSwiftPackageReference "SwiftSocket" */;
+			productName = SwiftSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A32A3D0426D1A5640093FAC5 /* Project object */;
 }
