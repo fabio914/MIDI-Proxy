@@ -35,7 +35,7 @@ final class MidiSender {
 struct MidiEventPayload {
     let protocolIdentifier: UInt32 = 13371337
     let type: UInt8
-    let timestamp: UInt64
+//    let timestamp: UInt64
     let channel: UInt8
     let note: UInt8
 
@@ -49,7 +49,7 @@ struct MidiEventPayload {
             }
         }()
 
-        self.timestamp = event.timestamp
+//        self.timestamp = event.timestamp
         self.channel = event.channel
         self.note = event.note.noteNumber
     }
