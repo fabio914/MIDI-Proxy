@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF986CD42C44386A00E4E957 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EF986CD32C44386A00E4E957 /* RealityKitContent */; };
+		EF986CD62C44386A00E4E957 /* VisionMidiReceiverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF986CD52C44386A00E4E957 /* VisionMidiReceiverApp.swift */; };
+		EF986CD82C44386A00E4E957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF986CD72C44386A00E4E957 /* ContentView.swift */; };
+		EF986CDA2C44386B00E4E957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF986CD92C44386B00E4E957 /* Assets.xcassets */; };
+		EF986CDD2C44386B00E4E957 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF986CDC2C44386B00E4E957 /* Preview Assets.xcassets */; };
+		EF986CE62C44389000E4E957 /* SwiftSocket in Frameworks */ = {isa = PBXBuildFile; productRef = EF986CE52C44389000E4E957 /* SwiftSocket */; };
+		EF986CE82C44390D00E4E957 /* MidiReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF986CE72C44390D00E4E957 /* MidiReceiver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF986CCE2C44386A00E4E957 /* VisionMidiReceiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionMidiReceiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF986CD22C44386A00E4E957 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		EF986CD52C44386A00E4E957 /* VisionMidiReceiverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionMidiReceiverApp.swift; sourceTree = "<group>"; };
+		EF986CD72C44386A00E4E957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF986CD92C44386B00E4E957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF986CDC2C44386B00E4E957 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF986CDE2C44386B00E4E957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF986CE72C44390D00E4E957 /* MidiReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiReceiver.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF986CCB2C44386A00E4E957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF986CD42C44386A00E4E957 /* RealityKitContent in Frameworks */,
+				EF986CE62C44389000E4E957 /* SwiftSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF986CC52C44386A00E4E957 = {
+			isa = PBXGroup;
+			children = (
+				EF986CD02C44386A00E4E957 /* VisionMidiReceiver */,
+				EF986CD12C44386A00E4E957 /* Packages */,
+				EF986CCF2C44386A00E4E957 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF986CCF2C44386A00E4E957 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF986CCE2C44386A00E4E957 /* VisionMidiReceiver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF986CD02C44386A00E4E957 /* VisionMidiReceiver */ = {
+			isa = PBXGroup;
+			children = (
+				EF986CD52C44386A00E4E957 /* VisionMidiReceiverApp.swift */,
+				EF986CD72C44386A00E4E957 /* ContentView.swift */,
+				EF986CD92C44386B00E4E957 /* Assets.xcassets */,
+				EF986CDE2C44386B00E4E957 /* Info.plist */,
+				EF986CDB2C44386B00E4E957 /* Preview Content */,
+				EF986CE72C44390D00E4E957 /* MidiReceiver.swift */,
+			);
+			path = VisionMidiReceiver;
+			sourceTree = "<group>";
+		};
+		EF986CD12C44386A00E4E957 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				EF986CD22C44386A00E4E957 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		EF986CDB2C44386B00E4E957 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF986CDC2C44386B00E4E957 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF986CCD2C44386A00E4E957 /* VisionMidiReceiver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF986CE12C44386B00E4E957 /* Build configuration list for PBXNativeTarget "VisionMidiReceiver" */;
+			buildPhases = (
+				EF986CCA2C44386A00E4E957 /* Sources */,
+				EF986CCB2C44386A00E4E957 /* Frameworks */,
+				EF986CCC2C44386A00E4E957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionMidiReceiver;
+			packageProductDependencies = (
+				EF986CD32C44386A00E4E957 /* RealityKitContent */,
+				EF986CE52C44389000E4E957 /* SwiftSocket */,
+			);
+			productName = VisionMidiReceiver;
+			productReference = EF986CCE2C44386A00E4E957 /* VisionMidiReceiver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF986CC62C44386A00E4E957 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EF986CCD2C44386A00E4E957 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = EF986CC92C44386A00E4E957 /* Build configuration list for PBXProject "VisionMidiReceiver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF986CC52C44386A00E4E957;
+			packageReferences = (
+				EF986CE42C44389000E4E957 /* XCRemoteSwiftPackageReference "SwiftSocket" */,
+			);
+			productRefGroup = EF986CCF2C44386A00E4E957 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF986CCD2C44386A00E4E957 /* VisionMidiReceiver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF986CCC2C44386A00E4E957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF986CDD2C44386B00E4E957 /* Preview Assets.xcassets in Resources */,
+				EF986CDA2C44386B00E4E957 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF986CCA2C44386A00E4E957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF986CE82C44390D00E4E957 /* MidiReceiver.swift in Sources */,
+				EF986CD82C44386A00E4E957 /* ContentView.swift in Sources */,
+				EF986CD62C44386A00E4E957 /* VisionMidiReceiverApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EF986CDF2C44386B00E4E957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Debug;
+		};
+		EF986CE02C44386B00E4E957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.2;
+			};
+			name = Release;
+		};
+		EF986CE22C44386B00E4E957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VisionMidiReceiver/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTJ55TM37B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluenose.VisionMidiReceiver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		EF986CE32C44386B00E4E957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VisionMidiReceiver/Preview Content\"";
+				DEVELOPMENT_TEAM = ZTJ55TM37B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluenose.VisionMidiReceiver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF986CC92C44386A00E4E957 /* Build configuration list for PBXProject "VisionMidiReceiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF986CDF2C44386B00E4E957 /* Debug */,
+				EF986CE02C44386B00E4E957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF986CE12C44386B00E4E957 /* Build configuration list for PBXNativeTarget "VisionMidiReceiver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF986CE22C44386B00E4E957 /* Debug */,
+				EF986CE32C44386B00E4E957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF986CE42C44389000E4E957 /* XCRemoteSwiftPackageReference "SwiftSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fabio914/SwiftSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF986CD32C44386A00E4E957 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		EF986CE52C44389000E4E957 /* SwiftSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF986CE42C44389000E4E957 /* XCRemoteSwiftPackageReference "SwiftSocket" */;
+			productName = SwiftSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EF986CC62C44386A00E4E957 /* Project object */;
+}

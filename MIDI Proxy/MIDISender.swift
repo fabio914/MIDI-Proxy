@@ -9,7 +9,7 @@ import Foundation
 import SwiftSocket
 
 final class MidiSender {
-    private let port: Int32 = 1337
+    private let port: Int32 = 13370
     private let client: TCPClient
 
     init?(address: String) {
