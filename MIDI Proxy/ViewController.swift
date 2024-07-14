@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        midiSender = MidiSender(address: "192.168.0.94")
+        midiSender = MidiSender(address: "192.168.0.33")
         midiInput = MidiInput(delegate: self)
     }
 }
