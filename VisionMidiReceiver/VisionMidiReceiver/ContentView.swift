@@ -15,6 +15,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(viewModel.currentText)
+                .font(.system(size: 40))
         }
         .padding()
     }
